@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+.web-label
+{
+    margin-left: 20px;
+}
+
+.products-header
+{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products-header h1 {
+    margin: 0;
+}
+
+.nav-links
+{
+    width: 400px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 10px;
+}

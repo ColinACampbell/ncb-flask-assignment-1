@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="products-header">
+    <div class="web-label">
+        <h1> WeIn Shopping </h1>
+    </div>
+    <div class="nav-links">
+        <a href="#"> Home </a>
+        <a href="#"> Shopping </a>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+{% for product in products %}
+<div>
+    <img src="static/images/{{product.image}}" width="100"/>
+    {{product.name}}
+</div>
+{% endfor %}
+{% endblock %}
