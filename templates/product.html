@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="products-header">
+    <div class="web-label">
+        <h1> WeIn Shopping </h1>
+    </div>
+    <div class="nav-links">
+        <a href="/"> Home </a>
+        <a href="/products"> Shopping </a>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="product-wrapper">
+    <div class="product-container">
+        <div class="product-image">
+            <img src="/static/images/{{product.image}}" width="300" height="300" />
+        </div>
+        <div class="product-details">
+            <h1> {{product.name}}</h1>
+            <p> {{product.description}}</p>
+            <div>
+                <input placeholder="Enter the quantity"/>
+                <a onclick="alert('This button does nothing. Thanks for clicking though')" class="wein-btn"> Add To Cart </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

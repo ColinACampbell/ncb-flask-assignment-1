@@ -41,3 +41,89 @@ body {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+
+.product-item {
+    width: 200px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid grey;
+}
+
+.product-name {
+    text-align: center;
+    padding: 10px;
+}
+
+.product-price{
+    color: gray;
+    font-size: small;
+    padding-top: 10px;
+}
+
+.wein-btn
+{
+    border: none;
+    color: black;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.wein-btn:hover
+{
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.product-wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-container
+{
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 800px;
+    border: 1px solid black;
+}
+
+.product-container div {
+    padding: 10px;
+}
+
+.home-container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.colin-intro {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}

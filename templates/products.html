@@ -6,17 +6,23 @@
         <h1> WeIn Shopping </h1>
     </div>
     <div class="nav-links">
-        <a href="#"> Home </a>
-        <a href="#"> Shopping </a>
+        <a href="/"> Home </a>
+        <a href="/products"> Shopping </a>
     </div>
 </div>
 {% endblock %}
 
 {% block content %}
-{% for product in products %}
-<div>
-    <img src="static/images/{{product.image}}" width="100"/>
-    {{product.name}}
+<div class="grid-container">
+    {% for product in products %}
+    <div class="product-item">
+        <img src="static/images/{{product.image}}" width="100" height="100" />
+        <small class="product-price"> $ {{product.price }}</small>
+        <div class="product-name">
+            {{product.name}}
+        </div>
+        <a href="/products/{{product.id}}" class="wein-btn"> View Product </a>
+    </div>
+    {% endfor %}
 </div>
-{% endfor %}
 {% endblock %}
